@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar Section Start Here */
 .title-bar {
     width: 100%;
     min-height: 70px;
@@ -36,6 +37,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     padding: 10px 0;
+    font-weight: 700;
 }
 
 /* Green underline */
@@ -47,7 +49,7 @@ body {
     bottom: 3px;
     width: 0;
     height: 3px;
-    background-color: #f14501;
+    background-color: #f1b101;
     transition: width 0.3s ease;
 }
 
@@ -76,3 +78,5 @@ body {
     }
 
 }
+
+/* Navbar Section End Here */
