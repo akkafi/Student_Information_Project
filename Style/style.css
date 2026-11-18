@@ -9,7 +9,7 @@
 .title-bar {
     width: 100%;
     min-height: 70px;
-    background-color: #222;
+    background-color: #535353;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,9 +46,41 @@
     position: relative;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 10px 10px;
     font-weight: 700;
+}
+
+.buttons .login-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.buttons .login-btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(240, 24, 9, 0.25);
+}
+
+.buttons .login-btn:after{
+    display: none;
+}
+
+.signup-btn {
+    display: inline-block;
+    color: white;
+    background-color: #000000;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 /* underline */
@@ -56,17 +88,19 @@
 .buttons a::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 3px;
     width: 0;
     height: 3px;
     background-color: #f1b101;
+    transform: translateX(-50%);
     transition: width 0.3s ease;
 }
 
 .buttons a:hover::after {
     width: 100%;
 }
+
 
 
 /* Responsive Design */

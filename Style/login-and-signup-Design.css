@@ -27,6 +27,30 @@ body{
     background: #fff;
 }
 
+#password-box{
+    position: relative;
+    width: 100%;
+
+}
+
+#password-box i {
+    position: absolute;
+    left: 15px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #222222d8;
+    font-size: 18px;
+    z-index: 1;
+}
+
+#password-box input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
 .login-header{
     text-align: center;
     margin: 20px 0px 40px 0px;
