@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar Section Start Here */
@@ -20,11 +17,25 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     color: white;
     font-size: 24px;
     font-weight: 600;
 }
 
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h3 span {
+    color: #f19101;
+    font-size: 38px;
+    /* font-family: "Playwrite FR Moderne", cursive; */
+    font-weight: 800;
+}
 .buttons {
     display: flex;
     align-items: center;
@@ -40,7 +51,7 @@ body {
     font-weight: 700;
 }
 
-/* Green underline */
+/* underline */
 
 .buttons a::after {
     content: "";
@@ -80,3 +91,4 @@ body {
 }
 
 /* Navbar Section End Here */
+

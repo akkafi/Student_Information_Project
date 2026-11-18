@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d4d4d4;
+}
+
+/* Login Section Start Here */
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    min-height: 500px;
+    padding: 40px;
+    row-gap: 15px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.login-header{
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+    text-transform: uppercase;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-box .input-field{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    padding: 0 17px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 5px 20px 1px rgba(0,0,0,0.5);
+}
+
+::placeholder{
+    font-weight: 500;
+    color: #333;
+}
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+}
+
+#check-box{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section a{
+    color: #555;
+    font-weight: 500;
+}
+
+.input-submit{
+    position: relative;
+}
+
+.submit-btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submit-btn:hover{
+    background: #0f0f0f;
+    transition: 0.3s;
+}
+
+.sign-up-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 800;
+}
+
+/* main signup section */
+
+.input-submit button a{
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Login Section End Here */
