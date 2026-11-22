@@ -369,12 +369,24 @@ main{
 /* Responsive Design */
 
 @media (max-width: 900px) {
+
+
+    /* footer start here */
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* footer end here */
 }
 
 @media (max-width: 550px) {
+
+
+
+
+
+
+    /* footer start here */
     .main-footer {
         padding: 50px 7% 20px;
     }
@@ -388,5 +400,7 @@ main{
         flex-direction: column;
         text-align: center;
     }
+
+        /* footer end here */
 }
 
