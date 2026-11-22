@@ -129,19 +129,264 @@
 
 /* Navbar Section End Here */
 
-/* Hero Section */
+/* Hero Section start */
 
 main{
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 .hero-section {
     /* margin-top: 70px; */
     width: 100%;
+    height: 100vh;
     min-height: calc(100vh - 70px);
-    background-color: #e9e9e9;
+    background-color: #d4d4d4;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 50px;
-    border: 2px solid #000000;
 }
+
+.hero-section a{
+    text-decoration: none;
+}
+
+.main-content h1 {
+    font-size: 68px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+.main-content h1 span {
+    color: #f19101;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.main-content h1 .first-letter {
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.main-content p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+.main-content .btn {
+    display: inline-block;
+    padding: 20px 40px;
+    color: white;
+    background-color: #000000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    
+}
+
+#singup-btn{
+    background: linear-gradient(to right, #f19101, #1a1a1ad8);
+    color: rgb(255, 255, 255);
+}
+
+/* Sign Up Button */
+
+.signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #022dece5);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    transition: all 0.3s ease;
+}
+
+.signup-btn .arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+}
+
+.signup-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+.signup-btn:active {
+    transform: translateY(0);
+}
+
+/* Sign Up Button end */
+
+.main-content .btn:hover {
+    background-color: #f19101;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(228, 228, 228, 0.25);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    background:linear-gradient(to top, #f19101, #858585d8);
+}
+
+/* Hero Section ends */
+
+
+
+/* Footer Section Start Here */
+
+.main-footer {
+    background: linear-gradient(
+        to top,
+        #080d18,
+        #101b30
+    );
+    color: #fff;
+    padding: 75px 8% 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.2fr;
+    gap: 50px;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 55px;
+}
+
+.footer-brand h2 {
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-brand h2 span {
+    color: #eab308;
+}
+
+.footer-brand p {
+    color: #9ca9bd;
+    line-height: 1.8;
+    font-size: 14px;
+    max-width: 300px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 23px;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer-links h3::after,
+.footer-contact h3::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #eab308;
+    bottom: -10px;
+    left: 0;
+}
+
+.footer-links a {
+    display: block;
+    color: #9ca9bd;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #eab308;
+    transform: translateX(5px);
+}
+
+.footer-contact p {
+    color: #9ca9bd;
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: #eab308;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    max-width: 1300px;
+    margin: auto;
+    border-top: 1px solid #29364b;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    color: #75849b;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .main-footer {
+        padding: 50px 7% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
